@@ -1,0 +1,12 @@
+beautifulsoup4
+celery
+dj-database-url
+Django
+django-test-without-migrations
+lxml_to_dict
+mysqlclient
+PyPDF2
+python-decouple
+pytz
+requests
+zeep
