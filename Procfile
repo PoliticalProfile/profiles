@@ -1,0 +1,1 @@
+web: gunicorn political_profile.wsgi --log-file -

@@ -4,7 +4,7 @@ dj-database-url
 Django
 django-test-without-migrations
 lxml_to_dict
-mysqlclient
+psycopg2
 PyPDF2
 python-decouple
 pytz
