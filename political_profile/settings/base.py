@@ -125,7 +125,7 @@ CELERYBEAT_SCHEDULE = {
     }
 }
 
-BROKER_URL = config('BROKER_URL')
+BROKER_URL = config('BROKER_URL', default='amqp://guest@localhost//')
 
 ########################################################################
 # Static files (CSS, JavaScript, Images)
