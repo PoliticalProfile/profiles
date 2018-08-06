@@ -28,6 +28,7 @@ DEFAULT_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
+    'rest_framework',
     'test_without_migrations',
 ]
 
@@ -132,3 +133,10 @@ BROKER_URL = config('BROKER_URL', default='amqp://guest@localhost//')
 
 STATIC_URL = '/static/'
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+
+########################################################################
+# API configuration
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 100
+}
